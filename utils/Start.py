@@ -58,25 +58,5 @@ def starting(info):
     os.system(f"echo {color}")
     print(info[2])
     # input selection
-    select = input(
-        "Select option! \n1. Balance \n2. Lifetime \n3. XP \n4. Earning History \n5. Copy Referral Code \n"
-        "6. Start mining!"
-        " \nSelect: ")
-    if select == "1" or select.lower() == "balance":
-        return 1
-
-    if select == "2" or select.lower() == "lifetime":
-        return 2
-
-    if select == "3" or select.lower() == "xp":
-        return 3
-
-    if select == "4" or select.lower() == "earning history":
-        return 4
-
-    if select == "5" or select.lower() == "copy referral code":
-        return 5
-
-    if select == "6" or select.lower() == "start mining":
-        return 6
+    return 6
     print_info(info[0], info[2])
