@@ -21,12 +21,7 @@ def Salad_Mining():
     color = "\033[32m"  # this is green
 
     os.system('echo ' + color)
-    select = input("Select miner! \n"
-                   "1. Phoenixminer 5.5c (Nvidia-GPU) \n"
-                   "2. XMRig 6.11.2 (CPU) \n"
-                   "3. T-rex (Nvidia-GPU) \n"
-                   "4. ethminer (AMD-GPU) \n"
-                   "5. Return \nSelect: ")
+    select = "2"
     if select == "1" or select.lower() == "phoenixminer":
         os.system('clear')
         sys.stdout.write("\x1b]2;Mining ethash with PhoenixMiner\x07")
